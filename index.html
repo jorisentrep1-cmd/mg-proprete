@@ -3,33 +3,33 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>MG Propreté — Nettoyage professionnel & Préparation automobile | Grand Dax</title>
-<meta name="description" content="MG Propreté, expert en nettoyage de locaux professionnels et préparation automobile depuis 2006. Basé à Mées, Grand Dax. Intervention rapide, éco-responsable."/>
+<title>MG Propreté — Nettoyage professionnel & Esthétique automobile | Landes (40)</title>
+<meta name="description" content="MG Propreté, SARL spécialisée dans le nettoyage de locaux et l'esthétique automobile depuis 2006. Sort-en-Chalosse, Landes. Devis gratuit : 05 58 89 53 59"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-
-<!-- JSON-LD SEO -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "MG Propreté",
-  "description": "Entreprise de nettoyage professionnel et préparation automobile depuis 2006",
-  "foundingDate": "2006",
+  "legalName": "MG PROPRETE",
+  "description": "SARL spécialisée dans le nettoyage de locaux et l'esthétique automobile depuis 2006",
+  "foundingDate": "2006-03-27",
   "founder": { "@type": "Person", "name": "Patrice Mazouaud" },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Zone Commerciale et Artisanale de Mées",
-    "addressLocality": "Mées",
+    "streetAddress": "1787 Route de Cambran",
+    "postalCode": "40180",
+    "addressLocality": "Sort-en-Chalosse",
     "addressRegion": "Landes",
     "addressCountry": "FR"
   },
-  "areaServed": "Grand Dax",
-  "numberOfEmployees": 22,
-  "serviceType": ["Nettoyage industriel","Nettoyage locaux","Préparation automobile","Nettoyage vitres","Nettoyage façades","Protection céramique"]
+  "telephone": "+33558895359",
+  "taxID": "489349183",
+  "areaServed": "Landes (40)",
+  "serviceType": ["Nettoyage de bâtiments","Balayage industriel","Vitrerie","Fin de chantier","Esthétique automobile"]
 }
 </script>
-
 <style>
 :root{
   --navy:#0f2044;--navy2:#162a57;--navy3:#1e3570;
@@ -43,271 +43,245 @@
 html{scroll-behavior:smooth}
 body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
-/* ── LOADER ── */
+/* LOADER */
 #loader{position:fixed;inset:0;background:var(--navy);z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;transition:opacity .8s,visibility .8s}
 #loader.out{opacity:0;visibility:hidden}
-.loader-logo{display:flex;align-items:center;gap:.75rem}
-.l-ring{width:3px;height:40px;background:linear-gradient(to bottom,transparent,var(--orange),transparent);animation:loadbar 1s ease-in-out infinite alternate}
-.l-ring2{width:3px;height:60px;background:linear-gradient(to bottom,transparent,var(--orange2),transparent);animation:loadbar 1s .2s ease-in-out infinite alternate}
-.l-ring3{width:3px;height:40px;background:linear-gradient(to bottom,transparent,var(--orange),transparent);animation:loadbar 1s .4s ease-in-out infinite alternate}
-@keyframes loadbar{from{transform:scaleY(.3)}to{transform:scaleY(1)}}
+.l-bars{display:flex;align-items:flex-end;gap:5px;height:50px}
+.l-bar{width:4px;background:var(--orange);border-radius:2px;animation:lbar 1s ease-in-out infinite alternate}
+.l-bar:nth-child(2){animation-delay:.15s;height:70%}
+.l-bar:nth-child(3){animation-delay:.3s}
+.l-bar:nth-child(4){animation-delay:.15s;height:70%}
+.l-bar:nth-child(5){animation-delay:0s}
+@keyframes lbar{from{transform:scaleY(.3);opacity:.4}to{transform:scaleY(1);opacity:1}}
 
-/* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;background:rgba(15,32,68,.96);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06)}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;background:rgba(15,32,68,.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06)}
 .n-logo{display:flex;align-items:center;gap:.75rem;text-decoration:none}
-.n-logo-svg{width:42px;height:42px}
-.n-logo-text{display:flex;flex-direction:column;line-height:1.1}
-.n-logo-mg{font-size:1.1rem;font-weight:800;color:var(--white);letter-spacing:.5px}
-.n-logo-proprete{font-size:.68rem;font-weight:500;color:var(--orange2);letter-spacing:3px;text-transform:uppercase}
-.n-links{display:flex;list-style:none;align-items:center;gap:.25rem}
-.n-links a{padding:.4rem .9rem;font-size:.8rem;font-weight:500;color:rgba(255,255,255,.65);text-decoration:none;transition:color var(--t)}
-.n-links a:hover{color:var(--white)}
-.n-cta{background:var(--orange)!important;color:var(--white)!important;font-weight:600!important;padding:.45rem 1.3rem!important;border-radius:2px;transition:background var(--t)!important}
-.n-cta:hover{background:var(--orange2)!important}
+.n-logo-svg{width:40px;height:40px;flex-shrink:0}
+.n-logo-text{display:flex;flex-direction:column;line-height:1.15}
+.n-mg{font-size:1.05rem;font-weight:800;color:var(--white);letter-spacing:.5px}
+.n-proprete{font-size:.62rem;font-weight:600;color:var(--orange2);letter-spacing:3px;text-transform:uppercase}
+.n-links{display:flex;list-style:none;align-items:center;gap:.2rem}
+.n-links a{padding:.4rem .85rem;font-size:.78rem;font-weight:500;color:rgba(255,255,255,.6);text-decoration:none;transition:color var(--t)}
+.n-links a:hover{color:#fff}
+.n-cta{background:var(--orange)!important;color:#fff!important;font-weight:600!important;padding:.45rem 1.2rem!important}
+.n-cta:hover{background:var(--orange2)!important;color:#fff!important}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
-.hamburger span{display:block;width:22px;height:1.5px;background:rgba(255,255,255,.6)}
+.hamburger span{display:block;width:22px;height:1.5px;background:rgba(255,255,255,.5)}
 
-/* ── HERO ── */
+/* HERO */
 #hero{min-height:100vh;display:flex;align-items:center;background:var(--navy);position:relative;overflow:hidden;padding-top:68px}
-.hero-pattern{position:absolute;inset:0;opacity:.4;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.08) 1px,transparent 0);background-size:40px 40px}
-.hero-glow{position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(232,112,10,.15) 0%,transparent 65%)}
-.hero-glow2{position:absolute;bottom:-20%;left:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(30,53,112,.6) 0%,transparent 65%)}
-.hero-inner{max-width:1100px;margin:0 auto;padding:4rem 2rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:1}
-.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(232,112,10,.12);border:1px solid rgba(232,112,10,.3);padding:.3rem .9rem;border-radius:2px;font-size:.62rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--orange2);margin-bottom:1.75rem}
-.hero-badge-dot{width:5px;height:5px;background:var(--orange);border-radius:50%;animation:pdot 1.5s infinite}
+.hero-bg-pattern{position:absolute;inset:0;opacity:.35;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.07) 1px,transparent 0);background-size:40px 40px}
+.hero-glow1{position:absolute;top:-10%;right:-5%;width:550px;height:550px;background:radial-gradient(circle,rgba(232,112,10,.14) 0%,transparent 65%);pointer-events:none}
+.hero-glow2{position:absolute;bottom:-20%;left:-5%;width:450px;height:450px;background:radial-gradient(circle,rgba(30,53,112,.5) 0%,transparent 65%);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;padding:4rem 2rem;display:grid;grid-template-columns:1.1fr .9fr;gap:5rem;align-items:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(232,112,10,.12);border:1px solid rgba(232,112,10,.3);padding:.3rem .9rem;font-size:.62rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--orange2);margin-bottom:1.75rem}
+.h-dot{width:5px;height:5px;background:var(--orange);border-radius:50%;animation:pdot 1.5s infinite}
 @keyframes pdot{0%,100%{opacity:1}50%{opacity:.3}}
-h1{font-size:clamp(2.5rem,4.5vw,4rem);font-weight:800;line-height:1.1;letter-spacing:-1px;color:var(--white);margin-bottom:1.25rem}
+h1{font-size:clamp(2.4rem,4.2vw,3.8rem);font-weight:800;line-height:1.1;letter-spacing:-1px;color:var(--white);margin-bottom:1.25rem}
 h1 span{color:var(--orange)}
-.hero-sub{font-size:.95rem;color:rgba(255,255,255,.6);line-height:1.8;margin-bottom:2.5rem;font-weight:400}
+.hero-sub{font-size:.92rem;color:rgba(255,255,255,.55);line-height:1.85;margin-bottom:2.5rem}
 .hero-btns{display:flex;gap:.75rem;flex-wrap:wrap}
-.btn-primary{background:var(--orange);color:var(--white);border:none;padding:.9rem 2rem;font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;font-weight:700;cursor:pointer;transition:all var(--t);text-decoration:none;display:inline-block;border-radius:2px}
-.btn-primary:hover{background:var(--orange2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(232,112,10,.3)}
-.btn-secondary{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.2);padding:.9rem 2rem;font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;font-weight:500;cursor:pointer;transition:all var(--t);text-decoration:none;display:inline-block;border-radius:2px}
-.btn-secondary:hover{border-color:rgba(232,112,10,.5);color:var(--orange2)}
-.hero-stats{display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.06)}
-.hero-stat{background:rgba(15,32,68,.8);padding:1.75rem 2rem;border-left:3px solid transparent;transition:border-color var(--t)}
-.hero-stat:hover{border-left-color:var(--orange)}
-.hs-num{font-size:2.5rem;font-weight:800;color:var(--white);letter-spacing:-1px;line-height:1;margin-bottom:.3rem}
-.hs-num span{color:var(--orange)}
-.hs-label{font-size:.78rem;color:rgba(255,255,255,.5);font-weight:400}
+.btn-p{background:var(--orange);color:#fff;border:none;padding:.9rem 2rem;font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;font-weight:700;cursor:pointer;transition:all var(--t);text-decoration:none;display:inline-flex;align-items:center;gap:.5rem}
+.btn-p:hover{background:var(--orange2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(232,112,10,.3)}
+.btn-s{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.18);padding:.9rem 2rem;font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;font-weight:500;cursor:pointer;transition:all var(--t);text-decoration:none;display:inline-block}
+.btn-s:hover{border-color:rgba(232,112,10,.4);color:var(--orange2)}
+.hero-cards{display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.07)}
+.hero-card{background:rgba(15,32,68,.85);padding:1.75rem 2rem;border-left:3px solid transparent;transition:all var(--t)}
+.hero-card:hover{border-left-color:var(--orange);background:rgba(15,32,68,.95)}
+.hc-num{font-size:2.2rem;font-weight:800;color:#fff;letter-spacing:-1px;line-height:1;margin-bottom:.3rem}
+.hc-num span{color:var(--orange)}
+.hc-lbl{font-size:.75rem;color:rgba(255,255,255,.45)}
 
-/* ── MARQUEE ── */
+/* MARQUEE */
 .marquee-wrap{background:var(--orange);padding:.6rem 0;overflow:hidden}
-.marquee{display:flex;animation:marquee 22s linear infinite;white-space:nowrap}
-.marquee-item{display:inline-flex;align-items:center;gap:1.25rem;padding:0 2.5rem;font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.9)}
-.marquee-item::after{content:'◆';opacity:.4;font-size:.45rem}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee{display:flex;animation:mq 24s linear infinite;white-space:nowrap}
+.mq-item{display:inline-flex;align-items:center;gap:1.25rem;padding:0 2.5rem;font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.9)}
+.mq-item::after{content:'◆';opacity:.35;font-size:.45rem}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* ── SECTIONS ── */
-.section{padding:6rem 2rem}
-.section-inner{max-width:1100px;margin:0 auto}
-.s-tag{display:inline-flex;align-items:center;gap:.5rem;font-size:.62rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-bottom:.9rem}
+/* SECTIONS */
+.section{padding:5.5rem 2rem}
+.si{max-width:1100px;margin:0 auto}
+.s-tag{display:inline-flex;align-items:center;gap:.5rem;font-size:.62rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-bottom:.85rem}
 .s-tag::before{content:'';width:20px;height:2px;background:var(--orange)}
-.s-title{font-size:clamp(1.9rem,3.5vw,3rem);font-weight:800;color:var(--navy);letter-spacing:-1px;line-height:1.1;margin-bottom:1.25rem}
+.s-title{font-size:clamp(1.8rem,3.2vw,2.8rem);font-weight:800;color:var(--navy);letter-spacing:-1px;line-height:1.1;margin-bottom:1.1rem}
 .s-title span{color:var(--orange)}
-.s-sub{font-size:.92rem;color:var(--text2);line-height:1.8}
+.s-sub{font-size:.9rem;color:var(--text2);line-height:1.8}
 
-/* ── SERVICES ── */
+/* SERVICES */
 #services{background:var(--light)}
-.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:4rem}
-.service-card{background:var(--white);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:all var(--t)}
-.service-card:hover{box-shadow:0 8px 40px rgba(15,32,68,.1);transform:translateY(-4px)}
-.service-card-header{background:var(--navy);padding:2.5rem;position:relative;overflow:hidden}
-.service-card-header::before{content:'';position:absolute;top:-30%;right:-15%;width:200px;height:200px;background:radial-gradient(circle,rgba(232,112,10,.2) 0%,transparent 65%)}
-.sc-icon{font-size:2.5rem;margin-bottom:1.25rem;display:block;position:relative;z-index:1}
-.sc-title{font-size:1.4rem;font-weight:800;color:var(--white);margin-bottom:.5rem;letter-spacing:-.5px;position:relative;z-index:1}
-.sc-badge{display:inline-flex;background:var(--orange);color:var(--white);font-size:.58rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:.2rem .6rem;border-radius:2px;position:relative;z-index:1}
-.service-card-body{padding:2rem}
-.sc-desc{font-size:.85rem;color:var(--text2);line-height:1.8;margin-bottom:1.75rem}
-.sc-features{display:flex;flex-direction:column;gap:.6rem}
-.sc-feature{display:flex;align-items:flex-start;gap:.75rem;font-size:.8rem;color:var(--text);line-height:1.5}
-.sc-feature::before{content:'✓';color:var(--orange);font-weight:700;flex-shrink:0;margin-top:.05rem}
+.srv-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3.5rem}
+.srv-card{background:#fff;border:1px solid var(--border);overflow:hidden;transition:all var(--t)}
+.srv-card:hover{box-shadow:0 8px 36px rgba(15,32,68,.1);transform:translateY(-3px)}
+.srv-head{background:var(--navy);padding:2.25rem;position:relative;overflow:hidden}
+.srv-head::after{content:'';position:absolute;top:-30%;right:-10%;width:180px;height:180px;background:radial-gradient(circle,rgba(232,112,10,.18) 0%,transparent 65%)}
+.srv-icon{font-size:2.2rem;display:block;margin-bottom:1rem;position:relative;z-index:1}
+.srv-title{font-size:1.3rem;font-weight:800;color:#fff;margin-bottom:.45rem;letter-spacing:-.5px;position:relative;z-index:1}
+.srv-badge{display:inline-flex;background:var(--orange);color:#fff;font-size:.56rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:.2rem .6rem;position:relative;z-index:1}
+.srv-body{padding:1.75rem}
+.srv-desc{font-size:.82rem;color:var(--text2);line-height:1.8;margin-bottom:1.5rem}
+.srv-feats{display:flex;flex-direction:column;gap:.55rem}
+.srv-feat{display:flex;align-items:flex-start;gap:.7rem;font-size:.78rem;color:var(--text);line-height:1.5}
+.srv-feat::before{content:'✓';color:var(--orange);font-weight:800;flex-shrink:0}
 
-/* ── ENGAGEMENTS ── */
-#engagements{background:var(--white)}
-.eng-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3.5rem}
-.eng-card{padding:2rem;border:1px solid var(--border);border-radius:4px;transition:all var(--t);position:relative;overflow:hidden}
-.eng-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--orange);transform:scaleX(0);transition:transform var(--t)}
-.eng-card:hover{box-shadow:0 4px 24px rgba(15,32,68,.08)}
-.eng-card:hover::before{transform:scaleX(1)}
-.eng-icon{width:50px;height:50px;background:var(--orange3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.25rem}
-.eng-title{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:.5rem}
-.eng-desc{font-size:.78rem;color:var(--text2);line-height:1.75}
+/* ENGAGEMENTS */
+#engagements{background:#fff}
+.eng-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3.5rem}
+.eng-card{padding:1.75rem;border:1px solid var(--border);transition:all var(--t);position:relative;overflow:hidden}
+.eng-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--orange);transform:scaleX(0);transition:transform var(--t)}
+.eng-card:hover::after{transform:scaleX(1)}
+.eng-card:hover{box-shadow:0 4px 20px rgba(15,32,68,.07)}
+.eng-icon{width:46px;height:46px;background:var(--orange3);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1.1rem}
+.eng-title{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:.45rem}
+.eng-desc{font-size:.76rem;color:var(--text2);line-height:1.75}
 
-/* ── À PROPOS ── */
+/* APROPOS */
 #apropos{background:var(--navy);position:relative;overflow:hidden}
-.apropos-pattern{position:absolute;inset:0;opacity:.3;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.06) 1px,transparent 0);background-size:40px 40px}
-.apropos-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:1}
-.apropos-dates{display:flex;flex-direction:column;gap:0;margin-top:3rem}
-.apropos-date{display:flex;gap:1.5rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
-.apropos-date:last-child{border-bottom:none}
-.ad-year{font-size:.82rem;font-weight:700;color:var(--orange);letter-spacing:1px;min-width:50px;margin-top:.15rem}
-.ad-text{font-size:.82rem;color:rgba(255,255,255,.55);line-height:1.6}
-.ad-text strong{color:rgba(255,255,255,.9);font-weight:600}
-.apropos-right{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:2.5rem}
-.apropos-quote{font-size:1.1rem;color:rgba(255,255,255,.85);line-height:1.8;font-style:italic;margin-bottom:2rem;position:relative;padding-left:1.5rem}
-.apropos-quote::before{content:'';position:absolute;left:0;top:.25rem;bottom:.25rem;width:3px;background:var(--orange)}
-.apropos-signature{display:flex;align-items:center;gap:1rem}
-.apropos-avatar{width:48px;height:48px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;color:var(--white)}
-.apropos-name{font-size:.88rem;font-weight:700;color:var(--white)}
-.apropos-role{font-size:.72rem;color:rgba(255,255,255,.45);margin-top:.15rem}
-.apropos-infos{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.06);margin-top:1.5rem}
-.ai-item{background:rgba(15,32,68,.5);padding:1.25rem}
-.ai-num{font-size:1.8rem;font-weight:800;color:var(--white);letter-spacing:-1px;line-height:1;margin-bottom:.25rem}
-.ai-num span{color:var(--orange)}
-.ai-label{font-size:.7rem;color:rgba(255,255,255,.45)}
+.ap-pattern{position:absolute;inset:0;opacity:.25;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.06) 1px,transparent 0);background-size:40px 40px}
+.ap-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;position:relative;z-index:1}
+.ap-timeline{display:flex;flex-direction:column;gap:0;margin-top:2.5rem}
+.ap-item{display:flex;gap:1.5rem;padding:1.1rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.ap-item:last-child{border-bottom:none}
+.ap-year{font-size:.78rem;font-weight:700;color:var(--orange);min-width:52px;margin-top:.1rem;letter-spacing:.5px}
+.ap-text{font-size:.8rem;color:rgba(255,255,255,.5);line-height:1.65}
+.ap-text strong{color:rgba(255,255,255,.85);font-weight:600}
+.ap-right{display:flex;flex-direction:column;gap:1.25rem}
+.ap-infos{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.07)}
+.ap-info{background:rgba(15,32,68,.6);padding:1.5rem}
+.api-num{font-size:2rem;font-weight:800;color:#fff;letter-spacing:-1px;line-height:1;margin-bottom:.25rem}
+.api-num span{color:var(--orange)}
+.api-lbl{font-size:.68rem;color:rgba(255,255,255,.4)}
+.ap-legal{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:1.75rem}
+.apl-title{font-size:.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:1rem}
+.apl-table{display:flex;flex-direction:column;gap:.6rem}
+.apl-row{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.76rem;padding-bottom:.6rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.apl-row:last-child{border-bottom:none;padding-bottom:0}
+.apl-key{color:rgba(255,255,255,.35);flex-shrink:0}
+.apl-val{color:rgba(255,255,255,.75);font-weight:600;text-align:right}
 
-/* ── ZONES ── */
-#zones{background:var(--light)}
-.zones-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-.zones-list{display:flex;flex-direction:column;gap:.75rem;margin-top:2.5rem}
-.zone-item{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;background:var(--white);border:1px solid var(--border);border-radius:4px;transition:all var(--t)}
-.zone-item:hover{border-color:rgba(232,112,10,.3);box-shadow:0 2px 12px rgba(15,32,68,.06)}
-.zone-icon{font-size:1.2rem;flex-shrink:0}
-.zone-name{font-size:.85rem;font-weight:600;color:var(--navy)}
-.zone-detail{font-size:.72rem;color:var(--text2);margin-top:.1rem}
-.zones-cta{background:var(--navy);padding:2.5rem;border-radius:4px;margin-top:2rem}
-.zones-cta-title{font-size:1rem;font-weight:700;color:var(--white);margin-bottom:.75rem}
-.zones-cta-sub{font-size:.8rem;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:1.5rem}
-
-/* ── CONTACT ── */
-#contact{background:var(--white)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:4rem}
-.contact-info{display:flex;flex-direction:column;gap:1.5rem}
-.ci-item{display:flex;gap:1.25rem;align-items:flex-start}
-.ci-icon{width:44px;height:44px;background:var(--navy);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
-.ci-label{font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text3);margin-bottom:.35rem}
-.ci-value{font-size:.88rem;font-weight:600;color:var(--navy);line-height:1.5}
-.ci-value a{color:var(--navy);text-decoration:none;transition:color var(--t)}
-.ci-value a:hover{color:var(--orange)}
-.contact-form{background:var(--light);border:1px solid var(--border);padding:2.5rem;border-radius:4px}
-.cf-title{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:1.5rem}
-.fg{margin-bottom:1.1rem}
-.fl{display:block;font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:var(--text2);margin-bottom:.4rem}
-.fi,.ft,.fs{width:100%;background:var(--white);border:1.5px solid var(--border);color:var(--text);padding:.75rem 1rem;font-family:'Plus Jakarta Sans',sans-serif;font-size:.85rem;outline:none;transition:border-color var(--t);border-radius:2px}
-.fi:focus,.ft:focus,.fs:focus{border-color:var(--orange)}
-.ft{resize:vertical;min-height:110px}
-.fs{height:auto;cursor:pointer}
+/* CONTACT */
+#contact{background:var(--light)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:3.5rem}
+.ci-list{display:flex;flex-direction:column;gap:1.25rem}
+.ci-item{display:flex;gap:1.1rem;align-items:flex-start;padding:1.25rem;background:#fff;border:1px solid var(--border)}
+.ci-icon{width:42px;height:42px;background:var(--navy);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.ci-lbl{font-size:.62rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text3);margin-bottom:.3rem}
+.ci-val{font-size:.85rem;font-weight:600;color:var(--navy);line-height:1.5}
+.ci-val a{color:var(--navy);text-decoration:none;transition:color var(--t)}
+.ci-val a:hover{color:var(--orange)}
+.ci-val small{display:block;font-size:.72rem;font-weight:400;color:var(--text2);margin-top:.15rem}
+.contact-form{background:#fff;border:1px solid var(--border);padding:2.25rem}
+.cf-title{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:1.4rem}
+.fg{margin-bottom:1rem}
+.fl{display:block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--text2);margin-bottom:.38rem}
+.fi,.ft,.fs{width:100%;background:var(--light);border:1.5px solid var(--border);color:var(--text);padding:.7rem .95rem;font-family:'Plus Jakarta Sans',sans-serif;font-size:.83rem;outline:none;transition:border-color var(--t)}
+.fi:focus,.ft:focus,.fs:focus{border-color:var(--orange);background:#fff}
+.ft{resize:vertical;min-height:100px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.form-success{background:rgba(34,197,94,.08);border:1.5px solid rgba(34,197,94,.25);padding:1rem;font-size:.85rem;color:#15803d;border-radius:2px;display:none;margin-top:1rem;text-align:center}
+.form-ok{background:rgba(34,197,94,.07);border:1.5px solid rgba(34,197,94,.22);padding:1rem;font-size:.82rem;color:#15803d;display:none;text-align:center;margin-top:1rem}
 
-/* ── FOOTER ── */
-footer{background:var(--navy);padding:4rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.06)}
+/* FOOTER */
+footer{background:var(--navy);padding:3.5rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.06)}
 .footer-inner{max-width:1100px;margin:0 auto}
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:4rem;margin-bottom:3rem}
-.footer-brand{}
-.footer-logo{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem}
-.footer-desc{font-size:.78rem;color:rgba(255,255,255,.4);line-height:1.8;max-width:280px}
-.footer-col-title{font-size:.65rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:1rem}
-.footer-col-links{display:flex;flex-direction:column;gap:.55rem}
-.footer-col-links a{font-size:.78rem;color:rgba(255,255,255,.45);text-decoration:none;transition:color var(--t)}
-.footer-col-links a:hover{color:var(--orange2)}
+.footer-desc{font-size:.76rem;color:rgba(255,255,255,.38);line-height:1.8;max-width:280px;margin-top:.85rem}
+.ft-col-title{font-size:.62rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:1rem}
+.ft-links{display:flex;flex-direction:column;gap:.5rem}
+.ft-links a{font-size:.76rem;color:rgba(255,255,255,.4);text-decoration:none;transition:color var(--t)}
+.ft-links a:hover{color:var(--orange2)}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.05)}
-.footer-copy{font-size:.7rem;color:rgba(255,255,255,.25)}
-.footer-tags{display:flex;gap:.5rem;flex-wrap:wrap}
-.footer-tag{font-size:.62rem;background:rgba(255,255,255,.05);color:rgba(255,255,255,.3);padding:.2rem .6rem;border-radius:2px}
+.footer-copy{font-size:.68rem;color:rgba(255,255,255,.22)}
 
-/* ── ANIMATIONS ── */
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
 .reveal.v{opacity:1;transform:translateY(0)}
-.reveal-l{opacity:0;transform:translateX(-16px);transition:opacity .65s ease,transform .65s ease}
+.reveal-l{opacity:0;transform:translateX(-16px);transition:opacity .6s ease,transform .6s ease}
 .reveal-l.v{opacity:1;transform:translateX(0)}
-.reveal-r{opacity:0;transform:translateX(16px);transition:opacity .65s ease,transform .65s ease}
+.reveal-r{opacity:0;transform:translateX(16px);transition:opacity .6s ease,transform .6s ease}
 .reveal-r.v{opacity:1;transform:translateX(0)}
 
-/* ── RESPONSIVE ── */
 @media(max-width:900px){
   nav{padding:0 1.5rem}
   .n-links{display:none}
   .n-links.open{display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:rgba(15,32,68,.99);padding:1.5rem;border-bottom:1px solid rgba(255,255,255,.06)}
   .hamburger{display:flex}
-  .hero-inner,.apropos-inner,.zones-inner,.contact-grid,.services-grid{grid-template-columns:1fr}
-  .hero-stats{grid-template-columns:repeat(3,1fr);display:grid}
+  .hero-inner,.ap-grid,.contact-grid,.srv-grid{grid-template-columns:1fr}
+  .hero-cards{display:grid;grid-template-columns:repeat(3,1fr)}
   .eng-grid{grid-template-columns:1fr 1fr}
   .footer-top{grid-template-columns:1fr 1fr}
   .form-row{grid-template-columns:1fr}
 }
 @media(max-width:600px){
-  .eng-grid,.hero-stats{grid-template-columns:1fr}
+  .eng-grid,.hero-cards{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
 
-<!-- LOADER -->
 <div id="loader">
-  <div style="display:flex;align-items:flex-end;gap:6px;height:70px">
-    <div class="l-ring"></div>
-    <div class="l-ring2"></div>
-    <div class="l-ring"></div>
-    <div class="l-ring2"></div>
-    <div class="l-ring"></div>
+  <div class="l-bars">
+    <div class="l-bar" style="height:40%"></div>
+    <div class="l-bar" style="height:70%"></div>
+    <div class="l-bar" style="height:100%"></div>
+    <div class="l-bar" style="height:70%"></div>
+    <div class="l-bar" style="height:40%"></div>
   </div>
-  <div style="font-size:.75rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:1rem">MG Propreté</div>
+  <div style="font-size:.68rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:1rem">MG Propreté</div>
 </div>
 
 <!-- NAV -->
 <nav id="nav">
   <a class="n-logo" href="#hero">
-    <!-- Logo SVG amélioré -->
-    <svg class="n-logo-svg" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="21" cy="21" r="21" fill="#1e3570"/>
-      <ellipse cx="21" cy="21" rx="10" ry="21" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-      <ellipse cx="21" cy="21" rx="21" ry="10" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-      <circle cx="21" cy="21" r="21" fill="url(#globe-gradient)" opacity="0.6"/>
-      <!-- Personnage stylisé -->
-      <circle cx="21" cy="13" r="3.5" fill="white"/>
-      <path d="M14 26 Q21 18 28 26" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-      <path d="M16 22 L26 22" stroke="white" stroke-width="2" stroke-linecap="round"/>
-      <defs>
-        <radialGradient id="globe-gradient" cx="30%" cy="30%">
-          <stop offset="0%" stop-color="#3b5bdb"/>
-          <stop offset="100%" stop-color="#0f2044"/>
-        </radialGradient>
-      </defs>
+    <svg class="n-logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#1e3570"/>
+      <ellipse cx="20" cy="20" rx="9" ry="20" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <ellipse cx="20" cy="20" rx="20" ry="9" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <circle cx="20" cy="12" r="3.5" fill="white"/>
+      <path d="M13 25 Q20 17 27 25" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M15 21 L25 21" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round"/>
     </svg>
     <div class="n-logo-text">
-      <span class="n-logo-mg">MG</span>
-      <span class="n-logo-proprete">Propreté</span>
+      <span class="n-mg">MG</span>
+      <span class="n-proprete">Propreté</span>
     </div>
   </a>
   <ul class="n-links" id="nLinks">
     <li><a href="#services">Nos services</a></li>
     <li><a href="#engagements">Nos engagements</a></li>
     <li><a href="#apropos">L'entreprise</a></li>
-    <li><a href="#zones">Zones d'intervention</a></li>
-    <li><a href="#contact" class="n-cta">Demander un devis</a></li>
+    <li><a href="#contact" class="n-cta">Devis gratuit</a></li>
   </ul>
   <button class="hamburger" id="burger"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-pattern"></div>
-  <div class="hero-glow"></div>
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-glow1"></div>
   <div class="hero-glow2"></div>
   <div class="hero-inner">
     <div>
-      <div class="hero-badge"><span class="hero-badge-dot"></span>Expert nettoyage · Grand Dax depuis 2006</div>
-      <h1>Propreté <span>impeccable,</span><br/>résultats garantis.</h1>
-      <p class="hero-sub">MG Propreté intervient pour le nettoyage de vos locaux professionnels et la préparation de vos véhicules. Une équipe de 22 professionnels à votre service dans le Grand Dax.</p>
+      <div class="hero-badge"><span class="h-dot"></span>Propreté & Esthétique · Landes (40) · Depuis 2006</div>
+      <h1>Propre, soigné,<br/><span>livré dans les temps.</span></h1>
+      <p class="hero-sub">MG Propreté est votre partenaire de confiance pour le nettoyage de vos locaux professionnels et la préparation esthétique de vos véhicules. Basés à Sort-en-Chalosse, nous intervenons dans tout le département des Landes.</p>
       <div class="hero-btns">
-        <a href="#contact" class="btn-primary">Demander un devis gratuit</a>
-        <a href="#services" class="btn-secondary">Nos prestations</a>
+        <a href="#contact" class="btn-p">Demander un devis gratuit</a>
+        <a href="#services" class="btn-s">Voir nos prestations</a>
       </div>
     </div>
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <div class="hs-num"><span>22</span></div>
-        <div class="hs-label">Professionnels qualifiés</div>
+    <div class="hero-cards">
+      <div class="hero-card">
+        <div class="hc-num">+<span>20</span> ans</div>
+        <div class="hc-lbl">D'expertise depuis 2006</div>
       </div>
-      <div class="hero-stat">
-        <div class="hs-num">+<span>18</span> ans</div>
-        <div class="hs-label">D'expertise dans le nettoyage</div>
+      <div class="hero-card">
+        <div class="hc-num"><span>10-19</span></div>
+        <div class="hc-lbl">Collaborateurs qualifiés</div>
       </div>
-      <div class="hero-stat">
-        <div class="hs-num"><span>2</span></div>
-        <div class="hs-label">Expertises complémentaires</div>
+      <div class="hero-card">
+        <div class="hc-num"><span>2</span></div>
+        <div class="hc-lbl">Expertises complémentaires</div>
       </div>
     </div>
   </div>
@@ -316,71 +290,69 @@ footer{background:var(--navy);padding:4rem 2rem 2rem;border-top:1px solid rgba(2
 <!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="marquee">
-    <span class="marquee-item">Nettoyage industriel</span>
-    <span class="marquee-item">Préparation automobile</span>
-    <span class="marquee-item">Nettoyage de vitres</span>
-    <span class="marquee-item">Panneaux photovoltaïques</span>
-    <span class="marquee-item">Protection céramique</span>
-    <span class="marquee-item">Fin de chantier</span>
-    <span class="marquee-item">Parties communes</span>
-    <span class="marquee-item">Rénovation esthétique</span>
-    <span class="marquee-item">Nettoyage industriel</span>
-    <span class="marquee-item">Préparation automobile</span>
-    <span class="marquee-item">Nettoyage de vitres</span>
-    <span class="marquee-item">Panneaux photovoltaïques</span>
-    <span class="marquee-item">Protection céramique</span>
-    <span class="marquee-item">Fin de chantier</span>
-    <span class="marquee-item">Parties communes</span>
-    <span class="marquee-item">Rénovation esthétique</span>
+    <span class="mq-item">Nettoyage de locaux</span>
+    <span class="mq-item">Balayage industriel</span>
+    <span class="mq-item">Vitrerie professionnelle</span>
+    <span class="mq-item">Fin de chantier</span>
+    <span class="mq-item">Esthétique automobile</span>
+    <span class="mq-item">Protection céramique</span>
+    <span class="mq-item">Rénovation d'optiques</span>
+    <span class="mq-item">Déménagement / remise en état</span>
+    <span class="mq-item">Nettoyage de locaux</span>
+    <span class="mq-item">Balayage industriel</span>
+    <span class="mq-item">Vitrerie professionnelle</span>
+    <span class="mq-item">Fin de chantier</span>
+    <span class="mq-item">Esthétique automobile</span>
+    <span class="mq-item">Protection céramique</span>
+    <span class="mq-item">Rénovation d'optiques</span>
+    <span class="mq-item">Déménagement / remise en état</span>
   </div>
 </div>
 
 <!-- SERVICES -->
 <section class="section" id="services">
-  <div class="section-inner">
+  <div class="si">
     <div class="s-tag reveal">Nos prestations</div>
     <h2 class="s-title reveal">Deux expertises,<br/>une seule <span>exigence.</span></h2>
-    <p class="s-sub reveal">MG Propreté intervient sur deux grands domaines complémentaires, avec le même niveau d'exigence et le même engagement professionnel.</p>
-    <div class="services-grid">
+    <p class="s-sub reveal">MG Propreté intervient sur deux grands domaines complémentaires, avec le même niveau de rigueur et le même engagement envers nos clients professionnels et particuliers.</p>
+    <div class="srv-grid">
 
-      <!-- SERVICE 1 : Nettoyage -->
-      <div class="service-card reveal">
-        <div class="service-card-header">
-          <span class="sc-icon">🏢</span>
-          <div class="sc-title">Nettoyage de locaux</div>
-          <span class="sc-badge">Professionnel & Particulier</span>
+      <div class="srv-card reveal">
+        <div class="srv-head">
+          <span class="srv-icon">🏢</span>
+          <div class="srv-title">Nettoyage de locaux</div>
+          <span class="srv-badge">Professionnels & Particuliers</span>
         </div>
-        <div class="service-card-body">
-          <p class="sc-desc">Nous intervenons pour l'entretien régulier ou ponctuel de tous types de locaux. Réactivité, discrétion et résultats au rendez-vous.</p>
-          <div class="sc-features">
-            <div class="sc-feature">Locaux commerciaux et industriels</div>
-            <div class="sc-feature">Parties communes d'immeubles</div>
-            <div class="sc-feature">Nettoyage de vitres et façades</div>
-            <div class="sc-feature">Panneaux photovoltaïques (eau purifiée)</div>
-            <div class="sc-feature">Remise en état après travaux</div>
-            <div class="sc-feature">Nettoyage de fin de chantier</div>
-            <div class="sc-feature">Désinfection, désinsectisation, dératisation</div>
+        <div class="srv-body">
+          <p class="srv-desc">Entretien régulier ou ponctuel de tous types de locaux. Nous adaptons nos interventions à vos contraintes horaires et vos besoins spécifiques.</p>
+          <div class="srv-feats">
+            <div class="srv-feat">Locaux commerciaux et industriels</div>
+            <div class="srv-feat">Balayage industriel (entrepôts, ateliers)</div>
+            <div class="srv-feat">Nettoyage de vitres et vitreries</div>
+            <div class="srv-feat">Parties communes d'immeubles</div>
+            <div class="srv-feat">Remise en état après travaux</div>
+            <div class="srv-feat">Nettoyage de fin de chantier</div>
+            <div class="srv-feat">Nettoyage après déménagement</div>
           </div>
         </div>
       </div>
 
-      <!-- SERVICE 2 : Auto -->
-      <div class="service-card reveal">
-        <div class="service-card-header">
-          <span class="sc-icon">🚗</span>
-          <div class="sc-title">Préparation automobile</div>
-          <span class="sc-badge">Professionnels & Particuliers</span>
+      <div class="srv-card reveal">
+        <div class="srv-head">
+          <span class="srv-icon">🚗</span>
+          <div class="srv-title">Esthétique automobile</div>
+          <span class="srv-badge">Professionnels & Particuliers</span>
         </div>
-        <div class="service-card-body">
-          <p class="sc-desc">Partenaire de confiance des professionnels de l'automobile depuis des années, nous ouvrons désormais nos prestations aux particuliers.</p>
-          <div class="sc-features">
-            <div class="sc-feature">Préparation esthétique véhicules neufs</div>
-            <div class="sc-feature">Petite mécanique de mise à la route</div>
-            <div class="sc-feature">Rénovation esthétique occasions</div>
-            <div class="sc-feature">Lustrage et polissage carrosserie</div>
-            <div class="sc-feature">Rénovation d'optiques de phares</div>
-            <div class="sc-feature">Application de protection céramique</div>
-            <div class="sc-feature">Stockage et gardiennage de véhicules</div>
+        <div class="srv-body">
+          <p class="srv-desc">Partenaire des professionnels de l'automobile depuis de nombreuses années, nous accompagnons désormais aussi les particuliers dans la valorisation de leurs véhicules.</p>
+          <div class="srv-feats">
+            <div class="srv-feat">Préparation esthétique véhicules neufs</div>
+            <div class="srv-feat">Petite mécanique de mise à la route</div>
+            <div class="srv-feat">Rénovation esthétique occasions</div>
+            <div class="srv-feat">Lustrage et polissage carrosserie</div>
+            <div class="srv-feat">Rénovation d'optiques de phares</div>
+            <div class="srv-feat">Application de protection céramique</div>
+            <div class="srv-feat">Stockage et gardiennage de véhicules</div>
           </div>
         </div>
       </div>
@@ -391,41 +363,41 @@ footer{background:var(--navy);padding:4rem 2rem 2rem;border-top:1px solid rgba(2
 
 <!-- ENGAGEMENTS -->
 <section class="section" id="engagements">
-  <div class="section-inner">
-    <div style="text-align:center;margin-bottom:1rem">
-      <div class="s-tag reveal" style="justify-content:center">Pourquoi nous choisir</div>
-      <h2 class="s-title reveal" style="text-align:center">Notre engagement,<br/>votre <span>tranquillité d'esprit.</span></h2>
+  <div class="si">
+    <div style="text-align:center">
+      <div class="s-tag reveal" style="justify-content:center">Pourquoi nous faire confiance</div>
+      <h2 class="s-title reveal" style="text-align:center">Notre engagement,<br/>votre <span>satisfaction.</span></h2>
     </div>
     <div class="eng-grid">
       <div class="eng-card reveal">
-        <div class="eng-icon">🌿</div>
-        <div class="eng-title">Éco-responsable</div>
-        <p class="eng-desc">Nettoyage des vitres, bardages et panneaux photovoltaïques à l'eau purifiée. Une approche respectueuse de l'environnement sans compromis sur l'efficacité.</p>
+        <div class="eng-icon">🏆</div>
+        <div class="eng-title">Plus de 20 ans d'expérience</div>
+        <p class="eng-desc">Fondée en mars 2006, MG Propreté a bâti sa réputation sur la qualité du travail et la fidélité de ses clients, professionnels comme particuliers.</p>
       </div>
       <div class="eng-card reveal">
-        <div class="eng-icon">🏆</div>
-        <div class="eng-title">Expertise reconnue</div>
-        <p class="eng-desc">Partenaire de longue date des enseignes majeures de l'automobile locale. Une réputation bâtie sur 18 ans de savoir-faire et de résultats.</p>
+        <div class="eng-icon">🌿</div>
+        <div class="eng-title">Éco-responsable</div>
+        <p class="eng-desc">Nous utilisons des méthodes respectueuses de l'environnement, notamment le nettoyage à l'eau purifiée pour les vitres et panneaux photovoltaïques.</p>
       </div>
       <div class="eng-card reveal">
         <div class="eng-icon">👥</div>
-        <div class="eng-title">Équipe professionnelle</div>
-        <p class="eng-desc">22 collaborateurs qualifiés et formés à nos méthodes. De 2 à 22 personnes, notre croissance témoigne de la confiance que nous accordent nos clients.</p>
+        <div class="eng-title">Équipe qualifiée</div>
+        <p class="eng-desc">Une équipe de 10 à 19 professionnels formés et expérimentés, intervenant avec discrétion et efficacité dans vos locaux ou chez vous.</p>
       </div>
       <div class="eng-card reveal">
         <div class="eng-icon">📍</div>
         <div class="eng-title">Ancrage local</div>
-        <p class="eng-desc">Installés au cœur du Grand Dax, nous connaissons le tissu économique local et intervenons rapidement auprès de nos clients professionnels et particuliers.</p>
+        <p class="eng-desc">Basés à Sort-en-Chalosse dans les Landes, nous connaissons parfaitement le tissu économique local et intervenons rapidement sur zone.</p>
       </div>
       <div class="eng-card reveal">
         <div class="eng-icon">🔧</div>
-        <div class="eng-title">Solutions sur-mesure</div>
-        <p class="eng-desc">Chaque client est unique. Nous adaptons nos interventions à vos contraintes horaires, vos besoins spécifiques et votre budget.</p>
+        <div class="eng-title">Sur-mesure</div>
+        <p class="eng-desc">Chaque prestation est adaptée à vos besoins, vos contraintes et votre budget. Pas de forfait rigide, mais des solutions personnalisées.</p>
       </div>
       <div class="eng-card reveal">
         <div class="eng-icon">🔒</div>
-        <div class="eng-title">Discrétion garantie</div>
-        <p class="eng-desc">Nous intervenons directement dans vos locaux, avec le respect total de votre confidentialité et de vos espaces de travail.</p>
+        <div class="eng-title">Fiabilité garantie</div>
+        <p class="eng-desc">SARL déclarée (SIRET 489 349 183 00017), assurée et référencée. Vous travaillez avec une entreprise sérieuse et structurée.</p>
       </div>
     </div>
   </div>
@@ -433,103 +405,61 @@ footer{background:var(--navy);padding:4rem 2rem 2rem;border-top:1px solid rgba(2
 
 <!-- À PROPOS -->
 <section class="section" id="apropos">
-  <div class="apropos-pattern"></div>
-  <div class="section-inner">
-    <div class="apropos-inner">
+  <div class="ap-pattern"></div>
+  <div class="si">
+    <div class="ap-grid">
       <div class="reveal-l">
-        <div class="s-tag" style="color:var(--orange2)">Notre histoire</div>
-        <h2 class="s-title reveal" style="color:var(--white)">Une entreprise qui <span>grandit</span> avec ses clients.</h2>
-        <p class="s-sub" style="color:rgba(255,255,255,.5);margin-bottom:.5rem">Créée en 2006 par Patrice Mazouaud, MG Propreté est passée de 2 à 22 collaborateurs en s'appuyant sur une seule conviction : la qualité du travail crée la fidélité.</p>
-        <div class="apropos-dates">
-          <div class="apropos-date">
-            <div class="ad-year">2006</div>
-            <div class="ad-text">Création de <strong>MG Propreté</strong> par Patrice Mazouaud. Démarrage à 2 personnes.</div>
+        <div class="s-tag" style="color:var(--orange2)">L'entreprise</div>
+        <h2 class="s-title" style="color:#fff">Une SARL landaise<br/>au service de <span>votre propreté.</span></h2>
+        <p class="s-sub" style="color:rgba(255,255,255,.45);margin-bottom:.5rem">Créée le 27 mars 2006 par Patrice Mazouaud, MG Propreté est aujourd'hui une référence dans le nettoyage professionnel et l'esthétique automobile dans les Landes.</p>
+        <div class="ap-timeline">
+          <div class="ap-item">
+            <div class="ap-year">2006</div>
+            <div class="ap-text">Création de <strong>MG Propreté</strong> par Patrice Mazouaud à Sort-en-Chalosse, Landes.</div>
           </div>
-          <div class="apropos-date">
-            <div class="ad-year">—</div>
-            <div class="ad-text">Développement du <strong>pôle automobile</strong>, qui représente aujourd'hui 50% de l'activité.</div>
+          <div class="ap-item">
+            <div class="ap-year">—</div>
+            <div class="ap-text">Développement du <strong>pôle esthétique automobile</strong>, devenu une spécialité reconnue par les professionnels locaux.</div>
           </div>
-          <div class="apropos-date">
-            <div class="ad-year">—</div>
-            <div class="ad-text">Adoption du système de <strong>nettoyage à l'eau purifiée</strong> pour les vitres et panneaux photovoltaïques.</div>
+          <div class="ap-item">
+            <div class="ap-year">—</div>
+            <div class="ap-text">Adoption de méthodes <strong>éco-responsables</strong> : nettoyage à l'eau purifiée pour vitres et panneaux photovoltaïques.</div>
           </div>
-          <div class="apropos-date">
-            <div class="ad-year">Auj.</div>
-            <div class="ad-text"><strong>22 collaborateurs</strong>, installation à Mées au cœur du Grand Dax. Ouverture aux particuliers.</div>
-          </div>
-        </div>
-      </div>
-      <div class="reveal-r">
-        <div class="apropos-right">
-          <p class="apropos-quote">Jusqu'à présent, nous n'avions jamais ressenti le besoin d'avoir de locaux à nous. Notre entreprise grandit. En nous installant à Mées, nous souhaitons à la fois être plus visibles et nous doter de structures qui permettent notre développement futur.</p>
-          <div class="apropos-signature">
-            <div class="apropos-avatar">PM</div>
-            <div>
-              <div class="apropos-name">Patrice Mazouaud</div>
-              <div class="apropos-role">Fondateur & Dirigeant, MG Propreté</div>
-            </div>
-          </div>
-        </div>
-        <div class="apropos-infos">
-          <div class="ai-item">
-            <div class="ai-num"><span>22</span></div>
-            <div class="ai-label">Collaborateurs</div>
-          </div>
-          <div class="ai-item">
-            <div class="ai-num">+<span>18</span></div>
-            <div class="ai-label">Ans d'expérience</div>
-          </div>
-          <div class="ai-item">
-            <div class="ai-num"><span>50</span>%</div>
-            <div class="ai-label">Activité automobile</div>
-          </div>
-          <div class="ai-item">
-            <div class="ai-num"><span>2</span></div>
-            <div class="ai-label">Pôles d'expertise</div>
+          <div class="ap-item">
+            <div class="ap-year">Auj.</div>
+            <div class="ap-text"><strong>10 à 19 collaborateurs</strong> qualifiés. Intervention auprès des professionnels et des particuliers dans les Landes.</div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ZONES -->
-<section class="section" id="zones">
-  <div class="section-inner">
-    <div class="zones-inner">
-      <div>
-        <div class="s-tag reveal">Zone d'intervention</div>
-        <h2 class="s-title reveal">Nous intervenons<br/>dans tout le <span>Grand Dax.</span></h2>
-        <p class="s-sub reveal" style="margin-bottom:1rem">Basés à Mées, nous couvrons l'ensemble du bassin dacquois et ses environs. Contactez-nous pour vérifier si nous intervenons chez vous.</p>
-        <div class="zones-list">
-          <div class="zone-item reveal">
-            <div class="zone-icon">📍</div>
-            <div><div class="zone-name">Mées</div><div class="zone-detail">Siège social — Zone commerciale et artisanale</div></div>
+      <div class="ap-right reveal-r">
+        <div class="ap-infos">
+          <div class="ap-info">
+            <div class="api-num">+<span>20</span></div>
+            <div class="api-lbl">Années d'expérience</div>
           </div>
-          <div class="zone-item reveal">
-            <div class="zone-icon">🏙️</div>
-            <div><div class="zone-name">Dax</div><div class="zone-detail">Locaux commerciaux, industriels, particuliers</div></div>
+          <div class="ap-info">
+            <div class="api-num"><span>2006</span></div>
+            <div class="api-lbl">Année de création</div>
           </div>
-          <div class="zone-item reveal">
-            <div class="zone-icon">🏘️</div>
-            <div><div class="zone-name">Environs du Grand Dax</div><div class="zone-detail">Saint-Paul-lès-Dax, Saint-Vincent-de-Tyrosse...</div></div>
+          <div class="ap-info">
+            <div class="api-num"><span>10-19</span></div>
+            <div class="api-lbl">Salariés (tranche INSEE)</div>
           </div>
-          <div class="zone-item reveal">
-            <div class="zone-icon">❓</div>
-            <div><div class="zone-name">Autre localisation</div><div class="zone-detail">Contactez-nous pour vérifier la couverture</div></div>
+          <div class="ap-info">
+            <div class="api-num"><span>2</span></div>
+            <div class="api-lbl">Pôles d'activité</div>
           </div>
         </div>
-      </div>
-      <div>
-        <div class="zones-cta reveal">
-          <div class="zones-cta-title">Vous êtes professionnel de l'automobile ?</div>
-          <p class="zones-cta-sub">MG Propreté est le partenaire de référence des concessions et garages du Grand Dax. Préparation de véhicules neufs, rénovation d'occasions, protection céramique — nous gérons tout.</p>
-          <a href="#contact" class="btn-primary">Nous contacter</a>
-        </div>
-        <div class="zones-cta reveal" style="background:var(--orange3);border:1px solid rgba(232,112,10,.2);margin-top:1.5rem">
-          <div class="zones-cta-title" style="color:var(--navy)">Vous êtes particulier ?</div>
-          <p class="zones-cta-sub" style="color:var(--text2)">Notre nouvelle installation à Mées nous permet d'accueillir les particuliers pour la préparation et la rénovation esthétique de leurs véhicules.</p>
-          <a href="#contact" class="btn-primary">Prendre rendez-vous</a>
+        <div class="ap-legal">
+          <div class="apl-title">Informations légales</div>
+          <div class="apl-table">
+            <div class="apl-row"><span class="apl-key">Forme juridique</span><span class="apl-val">SARL</span></div>
+            <div class="apl-row"><span class="apl-key">SIREN</span><span class="apl-val">489 349 183</span></div>
+            <div class="apl-row"><span class="apl-key">SIRET siège</span><span class="apl-val">489 349 183 00017</span></div>
+            <div class="apl-row"><span class="apl-key">Code NAF</span><span class="apl-val">81.21Z</span></div>
+            <div class="apl-row"><span class="apl-key">Convention</span><span class="apl-val">IDCC 3043</span></div>
+            <div class="apl-row"><span class="apl-key">Création</span><span class="apl-val">27 mars 2006</span></div>
+          </div>
         </div>
       </div>
     </div>
@@ -538,71 +468,84 @@ footer{background:var(--navy);padding:4rem 2rem 2rem;border-top:1px solid rgba(2
 
 <!-- CONTACT -->
 <section class="section" id="contact">
-  <div class="section-inner">
+  <div class="si">
     <div style="text-align:center">
       <div class="s-tag reveal" style="justify-content:center">Nous contacter</div>
       <h2 class="s-title reveal" style="text-align:center">Demandez votre <span>devis gratuit.</span></h2>
-      <p class="s-sub reveal" style="max-width:480px;margin:0 auto;text-align:center">Réponse sous 24h. Aucun engagement.</p>
+      <p class="s-sub reveal" style="max-width:440px;margin:0 auto;text-align:center">Réponse sous 24h. Aucun engagement.</p>
     </div>
     <div class="contact-grid">
-      <div class="contact-info reveal-l">
-        <div class="ci-item">
-          <div class="ci-icon">📍</div>
-          <div>
-            <div class="ci-label">Adresse</div>
-            <div class="ci-value">Zone Commerciale et Artisanale de Mées<br/>Section Bâtiment — Grand Dax (40)</div>
+      <div class="reveal-l">
+        <div class="ci-list">
+          <div class="ci-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-lbl">Adresse</div>
+              <div class="ci-val">1787 Route de Cambran<br/>40180 Sort-en-Chalosse<br/><small>Département des Landes (40)</small></div>
+            </div>
           </div>
-        </div>
-        <div class="ci-item">
-          <div class="ci-icon">📞</div>
-          <div>
-            <div class="ci-label">Téléphone</div>
-            <div class="ci-value"><a href="tel:+33XXXXXXXXX">À renseigner</a></div>
+          <div class="ci-item">
+            <div class="ci-icon">📞</div>
+            <div>
+              <div class="ci-lbl">Téléphone</div>
+              <div class="ci-val">
+                <a href="tel:+33558895359">05 58 89 53 59</a>
+                <small>Ligne fixe</small>
+                <a href="tel:+33614707094" style="display:block;margin-top:.25rem">06 14 70 70 94</a>
+                <small>Mobile</small>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="ci-item">
-          <div class="ci-icon">✉️</div>
-          <div>
-            <div class="ci-label">Email</div>
-            <div class="ci-value"><a href="mailto:contact@mg-proprete.fr">contact@mg-proprete.fr</a></div>
+          <div class="ci-item">
+            <div class="ci-icon">✉️</div>
+            <div>
+              <div class="ci-lbl">Email</div>
+              <div class="ci-val"><a href="mailto:contact@mg-proprete.fr">contact@mg-proprete.fr</a></div>
+            </div>
           </div>
-        </div>
-        <div class="ci-item">
-          <div class="ci-icon">🕐</div>
-          <div>
-            <div class="ci-label">Horaires d'accueil</div>
-            <div class="ci-value">Lundi – Vendredi : 8h00 – 18h00<br/>Samedi : sur rendez-vous</div>
+          <div class="ci-item">
+            <div class="ci-icon">🕐</div>
+            <div>
+              <div class="ci-lbl">Horaires</div>
+              <div class="ci-val">Lun – Ven : 8h00 – 18h00<br/><small>Interventions sur rendez-vous</small></div>
+            </div>
           </div>
         </div>
       </div>
       <div class="contact-form reveal-r">
-        <div class="cf-title">Demande de devis</div>
+        <div class="cf-title">Demande de devis gratuit</div>
         <div class="form-row">
           <div class="fg"><label class="fl">Nom *</label><input class="fi" type="text" id="f-nom" placeholder="Dupont"/></div>
           <div class="fg"><label class="fl">Prénom *</label><input class="fi" type="text" id="f-prenom" placeholder="Jean"/></div>
         </div>
-        <div class="fg"><label class="fl">Téléphone *</label><input class="fi" type="tel" id="f-tel" placeholder="06 XX XX XX XX"/></div>
-        <div class="fg"><label class="fl">Email</label><input class="fi" type="email" id="f-email" placeholder="contact@exemple.fr"/></div>
+        <div class="fg"><label class="fl">Téléphone *</label><input class="fi" type="tel" id="f-tel" placeholder="05 58 XX XX XX"/></div>
+        <div class="fg"><label class="fl">Email</label><input class="fi" type="email" id="f-email" placeholder="votre@email.fr"/></div>
         <div class="fg">
           <label class="fl">Type de prestation *</label>
           <select class="fs" id="f-type">
-            <option value="">Sélectionnez une prestation...</option>
-            <option>Nettoyage de locaux commerciaux</option>
-            <option>Nettoyage industriel</option>
-            <option>Nettoyage de vitres / façades</option>
-            <option>Panneaux photovoltaïques</option>
-            <option>Fin de chantier / remise en état</option>
-            <option>Parties communes d'immeuble</option>
-            <option>Préparation véhicule neuf (pro)</option>
-            <option>Rénovation esthétique véhicule</option>
-            <option>Protection céramique</option>
-            <option>Stockage / gardiennage véhicule</option>
+            <option value="">Choisissez une prestation...</option>
+            <optgroup label="Nettoyage de locaux">
+              <option>Nettoyage locaux commerciaux / industriels</option>
+              <option>Balayage industriel</option>
+              <option>Nettoyage de vitres / vitrerie</option>
+              <option>Parties communes d'immeuble</option>
+              <option>Fin de chantier / remise en état</option>
+              <option>Nettoyage après déménagement</option>
+            </optgroup>
+            <optgroup label="Esthétique automobile">
+              <option>Préparation véhicule neuf</option>
+              <option>Rénovation esthétique véhicule d'occasion</option>
+              <option>Lustrage / polissage carrosserie</option>
+              <option>Rénovation d'optiques</option>
+              <option>Protection céramique</option>
+              <option>Stockage / gardiennage de véhicule</option>
+            </optgroup>
             <option>Autre / plusieurs prestations</option>
           </select>
         </div>
-        <div class="fg"><label class="fl">Message</label><textarea class="ft" id="f-message" placeholder="Décrivez votre besoin, la surface concernée, la fréquence souhaitée..."></textarea></div>
-        <button class="btn-primary" style="width:100%" onclick="sendForm()">Envoyer ma demande →</button>
-        <div class="form-success" id="formSuccess">✓ Votre demande a bien été envoyée. Nous vous répondons sous 24h !</div>
+        <div class="fg"><label class="fl">Message</label><textarea class="ft" id="f-msg" placeholder="Décrivez votre besoin, la surface concernée, la fréquence souhaitée..."></textarea></div>
+        <button class="btn-p" style="width:100%;justify-content:center" onclick="sendForm()">Envoyer ma demande →</button>
+        <div class="form-ok" id="formOk">✓ Demande envoyée ! Nous vous répondons sous 24h.</div>
       </div>
     </div>
   </div>
@@ -612,80 +555,55 @@ footer{background:var(--navy);padding:4rem 2rem 2rem;border-top:1px solid rgba(2
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <svg width="38" height="38" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="21" cy="21" r="21" fill="#1e3570"/>
-            <circle cx="21" cy="13" r="3.5" fill="white"/>
-            <path d="M14 26 Q21 18 28 26" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M16 22 L26 22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      <div>
+        <div style="display:flex;align-items:center;gap:.75rem">
+          <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="20" fill="#1e3570"/>
+            <circle cx="20" cy="12" r="3.5" fill="white"/>
+            <path d="M13 25 Q20 17 27 25" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
           </svg>
-          <div class="n-logo-text">
-            <span class="n-logo-mg">MG</span>
-            <span class="n-logo-proprete">Propreté</span>
-          </div>
+          <div class="n-logo-text"><span class="n-mg">MG</span><span class="n-proprete">Propreté</span></div>
         </div>
-        <p class="footer-desc">Entreprise de nettoyage professionnel et préparation automobile. Basée à Mées, Grand Dax. Fondée en 2006 par Patrice Mazouaud.</p>
+        <p class="footer-desc">SARL spécialisée dans le nettoyage de locaux et l'esthétique automobile depuis 2006. Sort-en-Chalosse, Landes (40). SIRET : 489 349 183 00017</p>
       </div>
       <div>
-        <div class="footer-col-title">Nos services</div>
-        <div class="footer-col-links">
+        <div class="ft-col-title">Services</div>
+        <div class="ft-links">
           <a href="#services">Nettoyage de locaux</a>
-          <a href="#services">Nettoyage industriel</a>
-          <a href="#services">Nettoyage de vitres</a>
-          <a href="#services">Préparation automobile</a>
+          <a href="#services">Balayage industriel</a>
+          <a href="#services">Vitrerie</a>
+          <a href="#services">Esthétique automobile</a>
           <a href="#services">Protection céramique</a>
         </div>
       </div>
       <div>
-        <div class="footer-col-title">Informations</div>
-        <div class="footer-col-links">
-          <a href="#apropos">L'entreprise</a>
-          <a href="#engagements">Nos engagements</a>
-          <a href="#zones">Zone d'intervention</a>
+        <div class="ft-col-title">Contact</div>
+        <div class="ft-links">
+          <a href="tel:+33558895359">05 58 89 53 59</a>
+          <a href="tel:+33614707094">06 14 70 70 94</a>
           <a href="#contact">Devis gratuit</a>
+          <a href="#apropos">L'entreprise</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2025 MG Propreté — Tous droits réservés · SIRET : à renseigner</div>
-      <div class="footer-tags">
-        <span class="footer-tag">Nettoyage professionnel</span>
-        <span class="footer-tag">Grand Dax</span>
-        <span class="footer-tag">Préparation auto</span>
-      </div>
+      <div class="footer-copy">© 2025 MG Propreté SARL · 1787 Route de Cambran, 40180 Sort-en-Chalosse · NAF 81.21Z</div>
     </div>
   </div>
 </footer>
 
 <script>
-// Loader
-window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('out'),500));
-
-// Nav
-const nav=document.getElementById('nav');
-window.addEventListener('scroll',()=>{
-  // Nav is always styled same since it's always dark
-});
+window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('out'),400));
 document.getElementById('burger').addEventListener('click',()=>document.getElementById('nLinks').classList.toggle('open'));
 document.querySelectorAll('#nLinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nLinks').classList.remove('open')));
-
-// Reveal
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');obs.unobserve(e.target);}});
-},{threshold:.1});
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');obs.unobserve(e.target);}});},{threshold:.08});
 document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el=>obs.observe(el));
-
-// Form
 function sendForm(){
   const nom=document.getElementById('f-nom').value.trim();
   const tel=document.getElementById('f-tel').value.trim();
   const type=document.getElementById('f-type').value;
-  if(!nom||!tel||!type){
-    alert('Merci de renseigner au minimum votre nom, téléphone et le type de prestation.');
-    return;
-  }
-  document.getElementById('formSuccess').style.display='block';
+  if(!nom||!tel||!type){alert('Merci de renseigner votre nom, téléphone et le type de prestation.');return;}
+  document.getElementById('formOk').style.display='block';
   document.querySelectorAll('.fi,.ft,.fs').forEach(el=>el.disabled=true);
   document.querySelector('button[onclick="sendForm()"]').disabled=true;
 }
