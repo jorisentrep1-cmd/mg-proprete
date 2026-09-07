@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="robots" content="noindex,nofollow"/>
 <title>MG Propreté — Nettoyage professionnel & Esthétique automobile | Landes (40)</title>
 <meta name="description" content="MG Propreté, SARL spécialisée dans le nettoyage de locaux et l'esthétique automobile depuis 2006. Sort-en-Chalosse, Landes. Devis gratuit : 05 58 89 53 59"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -214,6 +215,74 @@ footer{background:var(--navy);padding:3.5rem 2rem 2rem;border-top:1px solid rgba
 }
 @media(max-width:600px){
   .eng-grid,.hero-cards{grid-template-columns:1fr}
+}
+
+/* ---- Widget avis NovaSpot ---- */
+/* ---- Widget avis NovaSpot — tout est scopé .nsa- ---- */
+.nsa-wrap{--nsa-accent:#047857;--nsa-accent2:#059669;--nsa-star:#f5b301;
+  max-width:540px;margin:0 auto;font-family:inherit;text-align:center}
+.nsa-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);
+  border-radius:16px;padding:2.25rem 1.75rem}
+/* Variante fond clair : ajouter la classe .nsa-light sur .nsa-wrap */
+.nsa-wrap.nsa-light .nsa-card{background:#fff;border-color:rgba(0,0,0,.1);
+  box-shadow:0 10px 30px rgba(0,0,0,.06)}
+
+.nsa-q{font-size:1.05rem;font-weight:600;margin:0 0 1.5rem}
+.nsa-stars{display:flex;justify-content:center;gap:.5rem;margin-bottom:1.5rem}
+.nsa-star{font-size:2.1rem;line-height:1;cursor:pointer;color:rgba(150,150,150,.35);
+  transition:color .15s ease,transform .15s ease;background:none;border:none;padding:0}
+.nsa-star:hover,.nsa-star.nsa-on{color:var(--nsa-star);transform:scale(1.12)}
+.nsa-star:focus-visible{outline:2px solid var(--nsa-accent);outline-offset:3px;border-radius:4px}
+
+.nsa-step2{display:none}
+.nsa-step2.nsa-show{display:block;animation:nsa-fade .3s ease}
+@keyframes nsa-fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+.nsa-thanks{font-size:.9rem;line-height:1.6;margin:0 0 1.25rem;opacity:.85}
+
+/* Bouton Google — mise en avant IDENTIQUE quelle que soit la note */
+.nsa-google{display:flex;align-items:center;justify-content:center;gap:.6rem;
+  width:100%;box-sizing:border-box;background:var(--nsa-accent);color:#fff;
+  text-decoration:none;font-size:.92rem;font-weight:700;padding:1rem 1.25rem;
+  border-radius:10px;transition:background .2s ease}
+.nsa-google:hover{background:var(--nsa-accent2)}
+.nsa-google svg{width:18px;height:18px;flex-shrink:0}
+
+.nsa-sep{display:flex;align-items:center;gap:.85rem;margin:1.5rem 0 1.25rem;
+  font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;opacity:.45}
+.nsa-sep::before,.nsa-sep::after{content:'';flex:1;height:1px;background:currentColor;opacity:.35}
+
+.nsa-priv{text-align:left}
+.nsa-priv-t{font-size:.9rem;font-weight:700;margin:0 0 .4rem}
+.nsa-priv-d{font-size:.8rem;line-height:1.6;opacity:.75;margin:0 0 1rem}
+.nsa-field{width:100%;box-sizing:border-box;font-family:inherit;font-size:1rem;
+  padding:.8rem .9rem;margin-bottom:.7rem;border-radius:8px;
+  border:1px solid rgba(150,150,150,.4);background:rgba(255,255,255,.06);
+  color:inherit;-webkit-appearance:none;appearance:none}
+.nsa-wrap.nsa-light .nsa-field{background:#fff}
+.nsa-field:focus{outline:none;border-color:var(--nsa-accent)}
+.nsa-field::placeholder{opacity:.5}
+textarea.nsa-field{min-height:96px;resize:vertical}
+.nsa-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+
+.nsa-send{width:100%;font-family:inherit;font-size:.88rem;font-weight:700;
+  padding:.9rem;border-radius:8px;border:1.5px solid var(--nsa-accent);
+  background:transparent;color:var(--nsa-accent);cursor:pointer;transition:all .2s ease}
+.nsa-send:hover{background:var(--nsa-accent);color:#fff}
+.nsa-send:disabled{opacity:.5;cursor:default}
+.nsa-wrap:not(.nsa-light) .nsa-send{color:#fff;border-color:rgba(255,255,255,.5)}
+.nsa-wrap:not(.nsa-light) .nsa-send:hover{background:#fff;color:#111;border-color:#fff}
+
+.nsa-msg{font-size:.82rem;line-height:1.6;margin-top:.85rem;display:none}
+.nsa-msg.nsa-show{display:block}
+.nsa-msg.nsa-ok{color:#34d399}
+.nsa-msg.nsa-err{color:#f87171}
+
+.nsa-foot{font-size:.7rem;opacity:.45;margin:1.5rem 0 0;line-height:1.5}
+
+@media(max-width:520px){
+  .nsa-card{padding:1.75rem 1.25rem}
+  .nsa-star{font-size:1.9rem}
 }
 </style>
 </head>
@@ -466,6 +535,62 @@ footer{background:var(--navy);padding:3.5rem 2rem 2rem;border-top:1px solid rgba
   </div>
 </section>
 
+<!-- AVIS -->
+<section class="section" id="avis" style="background:#fff">
+  <div class="si">
+    <div style="text-align:center;margin-bottom:3rem">
+      <div class="s-tag reveal" style="justify-content:center">Votre avis</div>
+      <h2 class="s-title reveal" style="text-align:center">Vous avez fait appel<br/>à <span>nos services ?</span></h2>
+      <p class="s-sub reveal" style="max-width:460px;margin:0 auto;text-align:center">Votre retour nous aide à progresser — et aide les prochains clients à nous trouver.</p>
+    </div>
+    <div class="nsa-wrap nsa-light" id="nsaWrap" style="--nsa-accent:var(--orange);--nsa-accent2:var(--orange2)">
+      <div class="nsa-card">
+
+        <p class="nsa-q" id="nsaQ">Comment s'est passée notre intervention&nbsp;?</p>
+
+        <div class="nsa-stars" id="nsaStars" role="radiogroup" aria-label="Votre note">
+          <button type="button" class="nsa-star" data-v="1" role="radio" aria-label="1 étoile">★</button>
+          <button type="button" class="nsa-star" data-v="2" role="radio" aria-label="2 étoiles">★</button>
+          <button type="button" class="nsa-star" data-v="3" role="radio" aria-label="3 étoiles">★</button>
+          <button type="button" class="nsa-star" data-v="4" role="radio" aria-label="4 étoiles">★</button>
+          <button type="button" class="nsa-star" data-v="5" role="radio" aria-label="5 étoiles">★</button>
+        </div>
+
+        <div class="nsa-step2" id="nsaStep2">
+
+          <p class="nsa-thanks" id="nsaThanks"></p>
+
+          <!-- Canal privé EN PLUS (note basse) — placé avant le lien Google, qui reste toujours présent et inchangé -->
+          <div id="nsaPrivBlock" style="display:none">
+                <div class="nsa-priv">
+              <p class="nsa-priv-t">Un souci ? Dites-le-nous directement.</p>
+              <p class="nsa-priv-d">Votre message arrive immédiatement au gérant, qui vous répondra personnellement. C'est le plus rapide pour qu'on rattrape les choses.</p>
+
+              <input type="text" class="nsa-hp" id="nsaHp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+              <input type="text" class="nsa-field" id="nsaNom" placeholder="Votre nom" autocomplete="name"/>
+              <input type="text" class="nsa-field" id="nsaContact" placeholder="Email ou téléphone (pour vous répondre)" autocomplete="email"/>
+              <textarea class="nsa-field" id="nsaTexte" placeholder="Que s'est-il passé ?"></textarea>
+              <button type="button" class="nsa-send" id="nsaSend">Envoyer au gérant</button>
+              <p class="nsa-msg" id="nsaMsg"></p>
+            </div>
+            <div class="nsa-sep">ou</div>
+      </div>
+
+          <!-- Toujours affiché, à l'identique, quelle que soit la note -->
+          <a class="nsa-google" id="nsaGoogle" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.35 11.1h-9.17v2.98h5.27c-.23 1.37-1.6 4.01-5.27 4.01-3.17 0-5.76-2.63-5.76-5.87s2.59-5.87 5.76-5.87c1.81 0 3.02.77 3.71 1.44l2.53-2.44C16.81 3.83 14.68 3 12.18 3 7.03 3 2.86 7.16 2.86 12.3s4.17 9.3 9.32 9.3c5.38 0 8.95-3.78 8.95-9.11 0-.61-.07-1.08-.16-1.55z"/></svg>
+            <span>Laisser un avis sur Google</span>
+          </a>
+
+          <p class="nsa-foot">Vous restez libre de publier l'avis de votre choix sur Google, quelle que soit votre note.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="section" id="contact">
   <div class="si">
@@ -607,6 +732,90 @@ function sendForm(){
   document.querySelectorAll('.fi,.ft,.fs').forEach(el=>el.disabled=true);
   document.querySelector('button[onclick="sendForm()"]').disabled=true;
 }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+(function(){
+  /* ========== À CONFIGURER POUR CHAQUE CLIENT ========== */
+  const GOOGLE_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=PLACE_ID_DU_CLIENT';
+  const CLIENT_NOM        = 'MG Propreté';
+  const CLIENT_EMAIL      = 'contact@mg-proprete.fr';   // destinataire des avis privés
+  const EMAILJS_PUBLIC_KEY = 'IENEk0fXfBBkXFNwj';
+  const EMAILJS_SERVICE_ID = 'service_ovh';
+  const EMAILJS_TEMPLATE_ID = 'template_ixma0yp';  // template "NovaSpot — Avis privé"
+  /* ==================================================== */
+
+  const wrap = document.getElementById('nsaWrap');
+  if(!wrap) return;
+
+  const stars   = [].slice.call(document.querySelectorAll('.nsa-star'));
+  const step2   = document.getElementById('nsaStep2');
+  const thanks  = document.getElementById('nsaThanks');
+  const gLink   = document.getElementById('nsaGoogle');
+  const privBlk = document.getElementById('nsaPrivBlock');
+  const msg     = document.getElementById('nsaMsg');
+  const sendBtn = document.getElementById('nsaSend');
+  const loadedAt = Date.now();
+  let note = 0;
+
+  gLink.href = GOOGLE_REVIEW_URL;
+  if(window.emailjs) emailjs.init({publicKey: EMAILJS_PUBLIC_KEY});
+
+  function paint(upTo){
+    stars.forEach(s => s.classList.toggle('nsa-on', +s.dataset.v <= upTo));
+  }
+
+  stars.forEach(star => {
+    star.addEventListener('mouseenter', () => paint(+star.dataset.v));
+    star.addEventListener('mouseleave', () => paint(note));
+    star.addEventListener('click', () => {
+      note = +star.dataset.v;
+      paint(note);
+      stars.forEach(s => s.setAttribute('aria-checked', +s.dataset.v === note));
+
+      thanks.textContent = note >= 4
+        ? "Merci beaucoup ! Un avis Google nous aiderait énormément — c'est l'affaire de quelques secondes."
+        : "Merci de votre retour, il compte vraiment.";
+
+      // Le canal privé s'ajoute, il ne remplace jamais le lien Google.
+      privBlk.style.display = note <= 3 ? 'block' : 'none';
+      step2.classList.add('nsa-show');
+    });
+  });
+
+  sendBtn.addEventListener('click', function(){
+    if(document.getElementById('nsaHp').value) return;            // honeypot
+    if(Date.now() - loadedAt < 3000) return;                      // anti-bot
+
+    const texte = document.getElementById('nsaTexte').value.trim();
+    if(!texte){
+      msg.textContent = 'Merci de décrire brièvement ce qui s\'est passé.';
+      msg.className = 'nsa-msg nsa-err nsa-show';
+      return;
+    }
+
+    sendBtn.disabled = true;
+    sendBtn.textContent = 'Envoi...';
+
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+      to_email:   CLIENT_EMAIL,
+      commerce:   CLIENT_NOM,
+      note:       note + ' sur 5',
+      nom:        document.getElementById('nsaNom').value.trim() || 'Non renseigné',
+      contact:    document.getElementById('nsaContact').value.trim() || 'Non renseigné',
+      message:    texte
+    }).then(function(){
+      msg.textContent = 'Message envoyé. Le gérant vous répondra rapidement — merci de nous avoir laissé une chance de rattraper ça.';
+      msg.className = 'nsa-msg nsa-ok nsa-show';
+      sendBtn.textContent = 'Envoyé ✓';
+    }).catch(function(){
+      msg.innerHTML = 'L\'envoi a échoué. Vous pouvez nous écrire à <a href="mailto:' + CLIENT_EMAIL + '" style="color:inherit">' + CLIENT_EMAIL + '</a>.';
+      msg.className = 'nsa-msg nsa-err nsa-show';
+      sendBtn.disabled = false;
+      sendBtn.textContent = 'Réessayer';
+    });
+  });
+})();
 </script>
 </body>
 </html>

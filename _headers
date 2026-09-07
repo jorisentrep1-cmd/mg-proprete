@@ -1,0 +1,14 @@
+# Maquette privée : ni indexée, ni suivie par les moteurs de recherche.
+/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  X-Frame-Options: SAMEORIGIN
+
+/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=604800
